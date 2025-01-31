@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"); /* Headings, Call-to-actions, Header Navigation */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* Very Dark Blue  */
+/* Desaturated Blue */
+/* Bright Blue */
+/* Moderate Cyan  */
+/* Light Grayish Blue */
+/* Light Gray */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.navbar-brand img {
+  width: 170px;
+}
+
+.nav a {
+  color: hsl(243, 87%, 12%);
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.nav a:visited, .nav a:focus, .nav a:active, .nav a:hover {
+  color: hsl(243, 87%, 12%);
+}
+.nav a:hover {
+  font-weight: 700;
+}
+
+.intro {
+  max-width: 92%;
+  margin: 4rem auto 2rem;
+}
+.intro h1 {
+  color: hsl(243, 87%, 12%);
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.intro p {
+  color: hsl(243, 87%, 12%);
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  width: 32rem;
+}
+
+.email-input, .access-email-input {
+  width: 55%;
+}
+.email-input input, .access-email-input input {
+  border: 1px solid hsl(243, 87%, 12%);
+}
+.email-input input::-webkit-input-placeholder, .access-email-input input::-webkit-input-placeholder {
+  color: hsl(0, 0%, 75%);
+  font-size: 1rem;
+}
+.email-input input::-moz-placeholder, .access-email-input input::-moz-placeholder {
+  color: hsl(0, 0%, 75%);
+  font-size: 1rem;
+}
+.email-input input:-ms-input-placeholder, .access-email-input input:-ms-input-placeholder {
+  color: hsl(0, 0%, 75%);
+  font-size: 1rem;
+}
+.email-input input::-ms-input-placeholder, .access-email-input input::-ms-input-placeholder {
+  color: hsl(0, 0%, 75%);
+  font-size: 1rem;
+}
+.email-input input::placeholder, .access-email-input input::placeholder {
+  color: hsl(0, 0%, 75%);
+  font-size: 1rem;
+}
+
+.access-email-input {
+  width: 60%;
+}
+
+.submit-btn, .access-submit-btn {
+  width: 43%;
+}
+.submit-btn button, .access-submit-btn button {
+  outline: none;
+}
+.submit-btn button:hover, .access-submit-btn button:hover {
+  cursor: pointer;
+  background-color: hsla(224, 93%, 58%, 0.5);
+}
+
+.access-submit-btn {
+  width: 40%;
+}
+
+#stay-productive {
+  background-image: url(../../images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 300% 100%;
+}
+
+.testimonial {
+  margin: 7rem auto;
+  max-width: 90%;
+}
+
+.productivity-content h1,
+.productivity-content p {
+  color: hsl(243, 87%, 12%);
+}
+.productivity-content h1 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 2rem;
+}
+.productivity-content p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+}
+.productivity-content a {
+  color: hsl(170, 45%, 43%);
+}
+.productivity-content a:focus, .productivity-content a:active, .productivity-content a:visited {
+  color: hsl(170, 45%, 43%);
+}
+.productivity-content a:hover {
+  color: hsla(170, 45%, 43%, 0.7);
+}
+
+article {
+  margin-top: 2.88rem;
+  width: 22.625rem;
+  height: 16.325rem;
+  -webkit-box-shadow: 2px 0px 16px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 2px 0px 16px 0px rgba(0, 0, 0, 0.24);
+  color: hsl(243, 87%, 12%);
+}
+article blockquote {
+  padding: 1.3rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: 1.6;
+  font-size: 0.88rem;
+}
+article address img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+article address span {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+article .q-icon {
+  width: 30px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 0%;
+}
+
+.early-access {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
+}
+
+.left,
+.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.early-content h2 {
+  font-family: "Raleway";
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.early-content p {
+  font-family: "Open Sans";
+  width: 30rem;
+}
+
+.input-group .invalid-feedback {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+}
+footer .footer-links-grid {
+  max-width: 90%;
+  margin: 2rem auto 0;
+  color: hsl(240, 75%, 98%);
+}
+footer .footer-links-grid p {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+footer .footer-links-grid a {
+  margin-bottom: 2rem;
+  color: hsl(240, 75%, 98%);
+  font-family: "Open Sans";
+  font-weight: 400;
+  cursor: pointer;
+}
+footer .footer-links-grid a:focus, footer .footer-links-grid a:visited, footer .footer-links-grid a:active {
+  color: hsl(240, 75%, 98%);
+}
+footer .footer-links-grid a:hover {
+  color: hsl(238, 22%, 44%);
+}
+footer .footer-links-grid .icon {
+  font-size: 1.1rem;
+}
+footer .footer-links-grid .icon:hover {
+  cursor: pointer;
+  color: hsl(238, 22%, 44%);
+}
+
+@media screen and (width <= 992px) {
+  .left, .right {
+    width: 70%;
+  }
+}
+@media screen and (width <= 768px) {
+  .navbar-brand img {
+    width: 160px;
+  }
+  .nav a {
+    font-size: 1.4rem;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro p {
+    width: auto;
+  }
+  .email-input,
+  .submit-btn, .access-email-input, .access-submit-btn {
+    width: 70%;
+  }
+  #stay-productive {
+    background-image: url(../../images/bg-curve-mobile.svg);
+  }
+  .testimonial {
+    max-width: 92%;
+  }
+  .productivity-content h1 {
+    font-size: 1.8rem;
+  }
+  article {
+    margin: 2rem auto;
+  }
+  .left, .right {
+    width: 98%;
+  }
+  .early-content p {
+    width: auto;
+  }
+}
+@media screen and (width <= 600px) {
+  .navbar-brand img {
+    width: 83px;
+  }
+  .nav a {
+    font-size: 1rem;
+  }
+  .email-input,
+  .submit-btn, .access-email-input, .access-submit-btn {
+    width: 98%;
+  }
+  .access-email-input, .access-submit-btn {
+    margin: auto;
+  }
+  .testimonial {
+    max-width: 95%;
+  }
+  .productivity-content h1 {
+    font-size: 1.2rem;
+  }
+  .early-content p {
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

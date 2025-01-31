@@ -1,0 +1,344 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"); /* Headings, Call-to-actions, Header Navigation */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+//Font-families
+$Heading: "Raleway";
+$Body: "Open Sans";
+
+// Font-Weights
+$fontWeight: (
+  "Regular-weight": 400,
+  "Bold-weight": 700,
+);
+
+//Font-sizes
+$fontSize: 1rem;
+
+// Colors
+//***Primary-Colors
+$primary1: hsl(243, 87%, 12%); /* Very Dark Blue  */
+$primary2: hsl(238, 22%, 44%); /* Desaturated Blue */
+
+//***Accent-Colors
+$accent1: hsl(224, 93%, 58%); /* Bright Blue */
+$accent2: hsl(170, 45%, 43%); /* Moderate Cyan  */
+
+//***Neutral-Colors
+$neutral1: hsl(240, 75%, 98%); /* Light Grayish Blue */
+$neutral2: hsl(0, 0%, 75%); /* Light Gray */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $Body;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+//Header and Navigation
+.navbar-brand {
+  img {
+    width: 170px;
+  }
+}
+.nav {
+  a {
+    color: $primary1;
+    font-family: $Heading;
+    font-size: $fontSize;
+    font-weight: map-get($map: $fontWeight, $key: "Regular-weight");
+    cursor: pointer;
+    &:visited,
+    &:focus,
+    &:active,
+    &:hover {
+      color: $primary1;
+    }
+    &:hover {
+      font-weight: map-get($map: $fontWeight, $key: "Bold-weight");
+    }
+  }
+}
+
+.intro {
+  max-width: 92%;
+  margin: 4rem auto 2rem;
+
+  h1 {
+    color: $primary1;
+    font-family: $Heading;
+    font-size: 2.5rem;
+    font-weight: map-get($map: $fontWeight, $key: "Bold-weight");
+    line-height: 1.5;
+  }
+  p {
+    color: $primary1;
+    font-family: $Body;
+    font-size: $fontSize;
+    font-weight: map-get($map: $fontWeight, $key: "Regular-weight");
+    line-height: 1.8;
+    width: 32rem;
+  }
+}
+
+.email-input,.access-email-input {
+  width: 55%;
+  input {
+    border: 1px solid $primary1;
+    &::placeholder {
+      color: $neutral2;
+      font-size: $fontSize;
+    }
+  }
+}
+.access-email-input{
+    width: 60%;
+}
+.submit-btn ,.access-submit-btn {
+  width: 43%;
+  button {
+    outline: none;
+    &:hover {
+      cursor: pointer;
+      background-color: hsl(224, 93%, 58%, 0.5);
+    }
+  }
+}
+.access-submit-btn{
+    width: 40%;
+}
+//Stay Producive
+#stay-productive {
+  background-image: url(../../images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 300% 100%;
+}
+
+.testimonial {
+  margin: 7rem auto;
+  max-width: 90%;
+}
+.productivity-content {
+  h1,
+  p {
+    color: $primary1;
+  }
+  h1 {
+    font-family: $Heading;
+    font-weight: map-get($map: $fontWeight, $key: "Bold-weight");
+    font-size: 2rem;
+  }
+  p {
+    font-family: $Body;
+    font-weight: map-get($map: $fontWeight, $key: "Regular-weight");
+    font-size: 1rem;
+  }
+  a {
+    color: $accent2;
+
+    &:focus,
+    &:active,
+    &:visited {
+      color: $accent2;
+    }
+    &:hover {
+      color: hsl(170, 45%, 43%, 0.7);
+    }
+  }
+}
+
+article {
+  margin-top: 2.88rem;
+  width: 22.625rem;
+  height: 16.325rem;
+  -webkit-box-shadow: 2px 0px 16px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 2px 0px 16px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 2px 0px 16px 0px rgba(0, 0, 0, 0.24);
+  color: $primary1;
+
+  blockquote {
+    padding: 1.3rem;
+    font-family: $Body;
+    font-weight: map-get($map: $fontWeight, $key: "Regular-weight");
+    letter-spacing: 1.3px;
+    line-height: 1.6;
+    font-size: 0.88rem;
+  }
+  address {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    span {
+      font-family: $Heading;
+      font-weight: map-get($map: $fontWeight, $key: "Bold-weight");
+    }
+  }
+  .q-icon {
+    width: 30px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 0%;
+  }
+}
+
+.early-access {
+  background-color: $primary2;
+  color: $neutral1;
+}
+.left,
+.right {
+  flex:1;
+}
+
+.early-content {
+  h2 {
+    font-family: $Heading;
+    font-weight: map-get($map: $fontWeight, $key: "Bold-weight");
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: $Body;
+    font-weight: map-get($map: $fontWeight, $key: "Regular");
+    width: 30rem;
+  }
+}
+.input-group {
+    .invalid-feedback {
+      font-size: $fontSize;
+    }
+  }
+//Footer
+footer {
+    background-color: $primary1;
+    .footer-links-grid {
+      max-width: 90%;
+      margin: 2rem auto 0;
+      color: $neutral1;
+      p {
+        font-family: $Body;
+        font-weight: map-get($map: $fontWeight, $key: "Regular-weight");
+      }
+      a {
+        margin-bottom: 2rem;
+        color: $neutral1;
+        font-family: $Body;
+        font-weight: map-get($map: $fontWeight, $key: "Regular-weight");
+        cursor: pointer;
+        &:focus,
+        &:visited,
+        &:active {
+          color: $neutral1;
+        }
+        &:hover {
+          color: $primary2;
+        }
+      }
+      .icon {
+        font-size: 1.1rem;
+        &:hover {
+          cursor: pointer;
+          color: $primary2;
+        }
+      }
+    }
+  }
+
+//Media Queries
+
+@media screen and (992px<= width <= 1200px) {
+}
+@media screen and (width <= 992px) {
+    .left,.right{
+        width: 70%;
+    }
+}
+@media screen and (width <= 768px) {
+  .navbar-brand {
+    img {
+      width: 160px;
+    }
+  }
+  .nav {
+    a {
+      font-size: calc($fontSize + 0.4rem);
+    }
+  }
+  .intro {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      width: auto;
+    }
+  }
+  .email-input,
+  .submit-btn,.access-email-input,.access-submit-btn {
+    width: 70%;
+  }
+  #stay-productive {
+    background-image: url(../../images/bg-curve-mobile.svg);
+  }
+  .testimonial {
+    max-width: 92%;
+  }
+  .productivity-content {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  article {
+    margin: 2rem auto;
+  }
+ .left,.right{
+    width: 98%;
+ }
+ .early-content{
+    p{
+        width: auto;
+    }
+ }
+}
+@media screen and (width <= 600px) {
+  .navbar-brand {
+    img {
+      width: 83px;
+    }
+  }
+
+  .nav {
+    a {
+      font-size: $fontSize;
+    }
+  }
+  .email-input,
+  .submit-btn,.access-email-input,.access-submit-btn {
+    width: 98%;
+  }
+  .access-email-input,.access-submit-btn{
+    margin: auto;
+  }
+  .testimonial {
+    max-width: 95%;
+  }
+  .productivity-content {
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+  .early-content {
+    p {
+      width: auto;
+    }
+  }
+}
